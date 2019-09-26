@@ -1,8 +1,9 @@
 <?php
 
+require __DIR__.'/../utils/helpers.php';
 require __DIR__.'/../models/model.php';
 
-$title = "hello world";
-$array = getFooBarBaz();
-
-require __DIR__.'/../views/view.php';
+echo view('root', [
+    'title' => 'hello world',
+    'array' => getFooBarBaz(),
+]);
