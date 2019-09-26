@@ -1,9 +1,5 @@
 <?php
 
-require __DIR__.'/../utils/helpers.php';
-require __DIR__.'/../models/model.php';
+require __DIR__.'/../controllers/RootController.php';
 
-echo view('root', [
-    'title' => 'hello world',
-    'array' => getFooBarBaz(),
-]);
+echo (new RootController)->get();
