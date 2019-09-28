@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/../core/Controller.php';
+require __DIR__.'/Controller.php';
 
 require __DIR__.'/../models/FooBarBaz.php';
 
