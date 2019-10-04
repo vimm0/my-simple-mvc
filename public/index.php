@@ -1,5 +1,6 @@
 <?php
 
+require __DIR__.'/../src/controllers/FrontController.php';
 require __DIR__.'/../src/controllers/RootController.php';
 
-echo (new RootController)->get();
+(new FrontController())->run();
