@@ -1,6 +1,6 @@
 <?php
 
 require __DIR__.'/../src/controllers/FrontController.php';
+require __DIR__.'/../src/controllers/RootController.php';
 
-$frontController = new FrontController();
-$frontController->run();
+(new FrontController())->run();
