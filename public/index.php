@@ -1,5 +1,5 @@
 <?php
 
-require __DIR__.'/../src/controllers/RootController.php';
+require __DIR__.'/../vendor/autoload.php';
 
-echo (new RootController)->get();
+echo (new \App\Controllers\RootController)->get();
