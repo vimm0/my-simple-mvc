@@ -1,8 +1,10 @@
 <?php
 
+namespace App\Controllers;
+
 class FrontController
 {
-    const DEFAULT_CONTROLLER = "RootController";
+    const DEFAULT_CONTROLLER = "App\\Controllers\\RootController";
     const DEFAULT_ACTION = "get";
 
     protected $callable = [self::DEFAULT_CONTROLLER, self::DEFAULT_ACTION];
@@ -30,7 +32,7 @@ class FrontController
         @list($controller, $action, $params) = explode("/", $path, 3);
 
         if (isset($controller) && isset($action)) {
-            $this->setCallable([$controller, $action]);
+            $this->setCallable(["App\\Controllers\\$controller", $action]);
         }
 
         if (isset($params)) {
@@ -58,6 +60,6 @@ class FrontController
 
     public function run()
     {
-        call_user_func_array($this->callable, $this->params);
+        return call_user_func_array($this->callable, $this->params);
     }
 }

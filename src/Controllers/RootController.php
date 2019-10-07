@@ -1,12 +1,13 @@
 <?php
 
-require __DIR__.'/Controller.php';
+namespace App\Controllers;
 
-require __DIR__.'/../models/FooBarBaz.php';
+use App\Models\FooBarBaz;
+use App\Controllers\Controller;
 
 class RootController extends Controller
 {
-    public function get(): void
+    public function get()
     {
         echo view('root', [
             'title' => 'hello world',

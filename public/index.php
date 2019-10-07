@@ -1,6 +1,5 @@
 <?php
 
-require __DIR__.'/../src/controllers/FrontController.php';
-require __DIR__.'/../src/controllers/RootController.php';
+require __DIR__.'/../vendor/autoload.php';
 
-(new FrontController())->run();
+(new App\Controllers\FrontController())->run();
