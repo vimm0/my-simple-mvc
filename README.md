@@ -4,11 +4,18 @@ My Simple MVC is an experiment of creating a PHP framework from scratch. The mai
 
 ## Installation
 
-Clone this repository, then go to the cloned repository:
+Clone this repository:
 
 ```bash
 git clone https://github.com/wasthishelpful/my-simple-mvc
 cd my-simple-mvc
+```
+
+Then go to the cloned repository, and generate autoloader:
+
+```bash
+cd my-simple-mvc
+composer dump-autoload
 ```
 
 ## Usage
