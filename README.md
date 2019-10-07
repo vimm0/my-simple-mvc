@@ -8,7 +8,6 @@ Clone this repository:
 
 ```bash
 git clone https://github.com/wasthishelpful/my-simple-mvc
-cd my-simple-mvc
 ```
 
 Then go to the cloned repository, and generate autoloader:
