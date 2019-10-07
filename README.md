@@ -31,6 +31,8 @@ The root directory contains:
 
 * `public`: that's where requests may find a response. Read `public/index.php` first, then follow the white rabbit.
 * `src`: that's where the dark magic happens. It contains the PHP classes and helpers, following a Model-View-Controller pattern.
+* `helpers`: that's where useful helper functions are stored.
+* `resource/views`: that's where view for the application are stored. Trigger view part of Model-View-Controller pattern.
 
 ## Contributing
 
