@@ -7,9 +7,9 @@ use App\Controllers\Controller;
 
 class RootController extends Controller
 {
-    public function get(): string
+    public function get()
     {
-        return view('root', [
+        echo view('root', [
             'title' => 'hello world',
             'array' => FooBarBaz::get(),
         ]);
